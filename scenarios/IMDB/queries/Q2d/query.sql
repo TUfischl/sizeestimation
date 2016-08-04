@@ -1,4 +1,4 @@
-SELECT t.title AS movie_title 
+SELECT DISTINCT t.title AS movie_title 
 FROM company_name AS cn, keyword AS k, movie_companies AS mc, movie_keyword AS mk, title AS t 
 WHERE cn.country_code ='[us]' AND 
 k.keyword ='character-name-in-title' AND 

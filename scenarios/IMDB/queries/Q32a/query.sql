@@ -1,4 +1,4 @@
-SELECT lt.link AS link_type, t1.title AS first_movie, t2.id AS second_movie 
+SELECT DISTINCT lt.link AS link_type, t1.title AS first_movie, t2.id AS second_movie 
 FROM keyword AS k, link_type AS lt, movie_keyword AS mk, movie_link AS ml, title AS t1, title AS t2 
 WHERE k.keyword ='10,000-mile-club' AND 
 mk.keyword_id = k.id AND 

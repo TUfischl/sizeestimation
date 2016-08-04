@@ -1,4 +1,4 @@
-SELECT aka_name.name AS writer_pseudo_name, title.title AS movie_title 
+SELECT DISTINCT aka_name.name AS writer_pseudo_name, title.title AS movie_title 
 FROM aka_name AS aka_name, cast_info AS cast_info, company_name AS company_name, movie_companies AS movie_companies, name AS name, role_type AS role_type, title AS title 
 WHERE company_name.country_code ='[us]' AND 
 role_type.role ='writer' AND 

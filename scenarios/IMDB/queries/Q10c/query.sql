@@ -1,4 +1,4 @@
-SELECT chn.name AS character, t.title AS movie_with_american_producer 
+SELECT DISTINCT chn.name AS character, t.title AS movie_with_american_producer 
 FROM char_name AS chn, cast_info AS ci, company_name AS cn, company_type AS ct, movie_companies AS mc, role_type AS rt, title AS t 
 WHERE ci.note  LIKE '%(producer)%' AND 
 cn.country_code  = '[us]' AND 

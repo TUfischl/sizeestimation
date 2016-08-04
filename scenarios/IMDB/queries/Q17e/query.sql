@@ -1,4 +1,4 @@
-SELECT n.name AS member_in_charnamed_movie 
+SELECT DISTINCT n.name AS member_in_charnamed_movie 
 FROM cast_info AS ci, company_name AS cn, keyword AS k, movie_companies AS mc, movie_keyword AS mk, name AS n, title AS t 
 WHERE cn.country_code ='[us]' AND 
 k.keyword ='character-name-in-title' AND 

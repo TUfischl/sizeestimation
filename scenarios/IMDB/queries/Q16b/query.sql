@@ -1,4 +1,4 @@
-SELECT an.name AS cool_actor_pseudonym, t.title AS series_named_after_char 
+SELECT DISTINCT an.name AS cool_actor_pseudonym, t.title AS series_named_after_char 
 FROM aka_name AS an, cast_info AS ci, company_name AS cn, keyword AS k, movie_companies AS mc, movie_keyword AS mk, name AS n, title AS t 
 WHERE cn.country_code ='[us]' AND 
 k.keyword ='character-name-in-title' AND 
