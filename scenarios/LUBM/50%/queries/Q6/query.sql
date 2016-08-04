@@ -1,0 +1,9 @@
+DECLARE @Student TABLE(
+s	INT);
+
+INSERT INTO @Student
+SELECT * FROM Student;
+
+SELECT DISTINCT A0.s
+FROM @Student AS A0
+;
