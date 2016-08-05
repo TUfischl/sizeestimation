@@ -1,0 +1,28 @@
+# IMDB 
+Instructions to install the schema and data for the IMDB test scenario in SQL Server and DB2
+We followed a three-step procedure to install the IMDB schema and data in SQL Server and DB2. First, we installed the IMDB schema and the data in Postgres by following the instructions from “How Good Are Query Optimizers, Really?”. Second, we exported both the schema definition and the tuples of each table. The data of each table is stored in ‘|’-delimited files. Finally, we used these files to create the schema and load the data to SQL Server and DB2. 
+
+If you want to skip steps one and two follow the instructions below: 
+
+1.Run *only* the CREATE TABLE statements from schema.sql 
+
+2.Get the data :) The data files were exceeding the maximum allowable github size. Send us email to get the raw delimited data.  
+
+3.Load the data
+DB2: LOAD from 'path-file' of del modified by coldel| insert into <TABLE>;
+
+SQL Server: 
+BULK INSERT TABLE
+FROM ‘path-to-file’
+WITH
+(
+FIRSTROW = 1,
+FIELDTERMINATOR = '|',      
+ROWTERMINATOR = '\n',   
+ERRORFILE = ‘path-to-log-file',
+TABLOCK
+)
+
+*CAUTION*: Due to errors observed while loading the data in DB2 we had to break the data of table title in two different files (title.dsv and title-cont.sql). Load the data of both files prior to proceeding to the next step.  
+
+4.Create the constraints: Run *only* the statements creating the foreign key constraints from schema.sql
