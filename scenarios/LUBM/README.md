@@ -20,7 +20,7 @@ Instructions:
 
 3.Load the data
 
-*DB2* command: LOAD from 'path-file' of del modified by coldel| insert into <TABLE>;
+*DB2* command: LOAD from 'path-file' of del modified by coldel| insert into <TABLE>
 
 *SQL Server* command:
  
