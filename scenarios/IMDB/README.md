@@ -9,9 +9,13 @@ If you want to skip steps one and two follow the instructions below:
 2.Get the data :) The data files were exceeding the maximum allowable github size. Send us email to get the raw delimited data.  
 
 3.Load the data
-DB2: LOAD from 'path-file' of del modified by coldel| insert into <TABLE>;
 
-SQL Server: 
+*DB2* command: 
+
+LOAD from 'path-file' of del modified by coldel| insert into <TABLE>
+
+*SQL Server* command: 
+
 BULK INSERT TABLE
 FROM ‘path-to-file’
 WITH
