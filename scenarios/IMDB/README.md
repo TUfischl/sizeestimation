@@ -1,6 +1,6 @@
 # Instructions to install the schema and data for the IMDB test scenario in SQL Server and DB2 
 
-We followed a three-step procedure to install the IMDB schema and data in SQL Server and DB2. First, we installed the IMDB schema and the data in Postgres by following the instructions from “How Good Are Query Optimizers, Really?”. Second, we exported both the schema definition and the tuples of each table. The data of each table is stored in ‘|’-delimited files. Finally, we used these files to create the schema and load the data to SQL Server and DB2. 
+We followed a three-step procedure to install the IMDB schema and data in SQL Server and DB2. First, we installed the IMDB schema and the data in Postgres by following the instructions from "How Good Are Query Optimizers, Really?". Second, we exported both the schema definition and the tuples of each table. The data of each table is stored in '|'-delimited files. Finally, we used these files to create the schema and load the data to SQL Server and DB2. 
 
 If you want to skip steps one and two follow the instructions below: 
 

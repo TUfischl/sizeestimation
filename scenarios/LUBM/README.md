@@ -4,7 +4,7 @@
 
 *Subfolder 50%*: Contains the 14 queries of the LUBM benchmark. In this test scenario we want to realise cases where statistics are available only for a subset of the tables mentioned in the queries. We assume that tables prefixed by @ in the query body have no available statistics. 
 
-*Subfolder schema*: Contains the table definitions (file schema.sql) and the schema dependencies as tuple-generating-dependencies (file dependencies.txt). Note that in the latter file, we assume prefix variables by ‘?’. 
+*Subfolder schema*: Contains the table definitions (file schema.sql) and the schema dependencies as tuple-generating-dependencies (file dependencies.txt). Note that in the latter file, we assume prefix variables by '?'. 
 
 # Instructions to install the schema and data for the LUBM test scenarios in SQL Server and DB2 
 
@@ -16,7 +16,7 @@ Instructions:
 
 1.Run the CREATE TABLE statements from schema.sql 
 
-2.Get the data :) The data files were exceeding the maximum allowable github size. Send us email to get the raw ‘|’-delimited data.  
+2.Get the data :) The data files were exceeding the maximum allowable github size. Send us email to get the raw '|'-delimited data.  
 
 3.Load the data
 
