@@ -10,13 +10,13 @@ Subfolder *50%*: Contains the 14 queries of the LUBM benchmark. In this test sce
 
 Instructions to install the schema and data for the IMDB test scenario in SQL Server and DB2
 
-We got the LUBM ontology generator from http://swat.cse.lehigh.edu/projects/lubm/ and ran it with parameter 1K. We later borrowed a tool from Boris Motik to convert the data of the ontology in relational format and extract its dependencies.  
+We got the LUBM ontology generator from http://swat.cse.lehigh.edu/projects/lubm/ and ran it with parameter 1K. We later borrowed a tool from Boris Motik (boris.motik@cs.ox.ac.uk) to convert the data of the ontology in relational format and extract its dependencies.  
 
 Instructions: 
 
 1.Run the CREATE TABLE statements from schema.sql 
 
-2.Get the data :) The data files were exceeding the maximum allowable github size. Send us email to get the raw '|'-delimited data.  
+2.Get the data :) Download the raw '|'-delimited data from http://www.cs.ox.ac.uk/people/efthymia.tsamoura/sizeestimation/lubm.zip
 
 3.Load the data
 

@@ -12,7 +12,7 @@ If you want to skip steps one and two follow the instructions below:
 
 1.Run *only* the CREATE TABLE statements from schema.sql 
 
-2.Get the data :) The data files were exceeding the maximum allowable github size. Send us email to get the raw delimited data.  
+2.Get the data :) Download the raw '|'-delimited data from http://www.cs.ox.ac.uk/people/efthymia.tsamoura/sizeestimation/imdb.zip 
 
 3.Load the data
 
