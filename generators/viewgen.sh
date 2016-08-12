@@ -1,0 +1,1 @@
+java -jar viewgen.jar -s input/schema-tpch.xml -q input/query.sql -v input/view-policies.xml -o output/

@@ -1,0 +1,1 @@
+java -jar querygen.jar -s input/schema-tpch.xml -a input/stats-tpch.xml -q input/query-policies.xml -o output/
