@@ -1,7 +1,7 @@
 # generators
 
 
-##querygen.jar: Generates (possibly empty) queries over the relations of a database schema. 
+##querygen.jar: generates (possibly empty) queries over the relations of a database schema. 
 
 Inputs:
 
